@@ -167,6 +167,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4492c4db487431e4e92f2006fc421c83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _startingCoordinates: {x: 18, y: 7}
+  _moveTime: 0.35
 --- !u!1 &354630024
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,8 +344,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 8.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -383,6 +385,7 @@ GameObject:
   m_Component:
   - component: {fileID: 986431028}
   - component: {fileID: 986431029}
+  - component: {fileID: 986431030}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -414,6 +417,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ec42c28228a2414db5dce579dacc0c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &986431030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986431027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa729c262569ba548b3cd95acdc91601, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1424573104
@@ -620,5 +635,6 @@ MonoBehaviour:
   _squareWidth: 1
   _topLeftCorner: {fileID: 1856139125}
   _bottomRightCorner: {fileID: 1424573105}
+  _groundY: 0
   _groundBlockPrefab: {fileID: 5346638089782567394, guid: f48b90092619c5a418d42e1dee2a9cc3, type: 3}
   _groundParent: {fileID: 354630025}
